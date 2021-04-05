@@ -4,6 +4,13 @@
   ],
   "imageSize": 100,
   "commit": false,
+  "types": {
+    "js": {
+      "symbol": "🔥",
+      "description": "JavaScript",
+      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+    }
+  }
   "contributors": [
     {
       "login": "isabellabrookes",
@@ -11,7 +18,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/12928252?v=4",
       "profile": "https://isabellabrookes.com",
       "contributions": [
-        "code"
+        "code", "js"
       ]
     },
     {
