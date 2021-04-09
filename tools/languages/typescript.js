@@ -33,7 +33,9 @@ export default class TypeScript extends JavaScript {
 
   static generateRandomCode(lines, addComment, includeForLoop) {
     let fillerLines = [];
-    const functionProperties = `${Helpers.getRandomSingleCharacter()}: any, ${Helpers.getRandomSingleCharacter()}: any`;
+    const functionProperties = `${TypeScript.getRandomProperties().join(
+      ": any, "
+    )}: any`;
 
     const firstTsLines = [
       (randomFunctionName) => {
